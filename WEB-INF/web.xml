@@ -2,11 +2,11 @@
 
 <web-app>
     <servlet>
-        <servlet-name>List</servlet-name>
-        <servlet-class>ListServlet</servlet-class>
+        <servlet-name>mymemo.List</servlet-name>
+        <servlet-class>mymemo.ListServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>List</servlet-name>
+        <servlet-name>mymemo.List</servlet-name>
         <url-pattern>/list</url-pattern>
     </servlet-mapping>
 
