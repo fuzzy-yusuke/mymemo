@@ -1,5 +1,6 @@
 package mymemo;
 import java.io.IOException;
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -11,8 +12,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.sun.jdi.connect.spi.Connection;
 
 
 public class ListServlet extends HttpServlet {
@@ -36,7 +35,7 @@ public class ListServlet extends HttpServlet {
     	
     	String sql="SELECT * FROM posts";
     	
-    	try (Connection connection = DriverManager.getConnection(url, user, password);
+    	try (	Connection connection = DriverManager.getConnection(url, user, password);
                 PreparedStatement statment = connection.prepareStatement(sql);
                 ResultSet results = statment.executeQuery()) {
 
