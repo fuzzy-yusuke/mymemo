@@ -4,7 +4,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.HashMap;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -44,13 +43,12 @@ public class ShowServlet extends HttpServlet {
                ResultSet results = statment.executeQuery();
 
                while (results.next()) {
-                   HashMap<String, String> columns = new HashMap<String, String>();
 
                    String id = results.getString("id");
-                   columns.put("id", id);
+                   request.setAttribute("id", id);
 
                    String title = results.getString("title");
-                   columns.put("title", title);
+                   request.setAttribute("title", title);
 
                    String content = results.getString("content").replaceAll("\n","<br>" );
                    request.setAttribute("content", content);
