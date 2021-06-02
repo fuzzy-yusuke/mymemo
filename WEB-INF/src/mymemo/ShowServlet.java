@@ -25,7 +25,7 @@ public class ShowServlet extends HttpServlet {
     	
     	String url = "jdbc:mysql://localhost/memo";
         String user = "root";
-        String password = "";
+        String password = "chhagane";
         
         try {
             Class.forName("com.mysql.jdbc.Driver");
