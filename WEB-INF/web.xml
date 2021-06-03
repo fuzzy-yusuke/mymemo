@@ -11,56 +11,56 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>Show</servlet-name>
-        <servlet-class>ShowServlet</servlet-class>
+        <servlet-name>mymemo.Show</servlet-name>
+        <servlet-class>mymemo.ShowServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Show</servlet-name>
+        <servlet-name>mymemo.Show</servlet-name>
         <url-pattern>/show</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>Edit</servlet-name>
-        <servlet-class>EditServlet</servlet-class>
+        <servlet-name>mymemo.Edit</servlet-name>
+        <servlet-class>mymemo.EditServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Edit</servlet-name>
+        <servlet-name>mymemo.Edit</servlet-name>
         <url-pattern>/edit</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>Update</servlet-name>
-        <servlet-class>UpdateServlet</servlet-class>
+        <servlet-name>mymemo.Update</servlet-name>
+        <servlet-class>mymemo.UpdateServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Update</servlet-name>
+        <servlet-name>mymemo.Update</servlet-name>
         <url-pattern>/update</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>Destroy</servlet-name>
-        <servlet-class>DestroyServlet</servlet-class>
+        <servlet-name>mymemo.Destroy</servlet-name>
+        <servlet-class>mymemo.DestroyServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Destroy</servlet-name>
+        <servlet-name>mymemo.Destroy</servlet-name>
         <url-pattern>/destroy</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>New</servlet-name>
-        <servlet-class>NewServlet</servlet-class>
+        <servlet-name>mymemo.New</servlet-name>
+        <servlet-class>mymemo.NewServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>New</servlet-name>
+        <servlet-name>mymemo.New</servlet-name>
         <url-pattern>/new</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>Create</servlet-name>
-        <servlet-class>CreateServlet</servlet-class>
+        <servlet-name>mymemo.Create</servlet-name>
+        <servlet-class>mymemo.CreateServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Create</servlet-name>
+        <servlet-name>mymemo.Create</servlet-name>
         <url-pattern>/create</url-pattern>
     </servlet-mapping>
 </web-app>

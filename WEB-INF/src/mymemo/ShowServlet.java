@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.*;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -23,7 +24,7 @@ public class ShowServlet extends HttpServlet {
     		request.setAttribute("message", "This is your post" + postId);
     	}
     	
-    	String url = "jdbc:mysql://localhost/memo";
+    	String url = "jdbc:mysql://localhost/mymemo";
         String user = "root";
         String password = "chhagane";
         
